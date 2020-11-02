@@ -1,0 +1,35 @@
+.profile__add-button {
+  width: 150px;
+  height: 50px;
+  padding: 0;
+  background-color: black;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  box-sizing: border-box;
+  right: 0;
+  position: absolute;
+  text-decoration: none;
+  background-size: 150px 50px;
+  cursor: pointer;
+  margin: 0;
+}
+.profile__add-button:before,
+.profile__add-button:after {
+  position: absolute;
+  bottom: 14px;
+  content: " ";
+  height: 22px;
+  width: 3px;
+  background-color: #ffffff;
+}
+
+.profile__add-button:before {
+  transform: rotate(0deg);
+}
+.profile__add-button:after {
+  transform: rotate(90deg);
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
+}

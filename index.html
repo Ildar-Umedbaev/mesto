@@ -4,90 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./pages/index.css">
     <title>Mesto</title>
 </head>
 
 <body class="page">
     <div class="page_conteiner">
         <header class="header">
-            <img class="logo" src="/images/logo.svg" alt="Логотип" />
-            <hr>
+            <img class="logo" src="./images/logo.svg" alt="Логотип" />
         </header>
         <main class="content">
             <section class="profile">
-                <div class="avatar">
-                    <img class="photo" src="./images/image.jpg" alt="Жак-Ив Кусто">
+                <div class="profile__avatar">
+                    <img class="profile__photo" src="./images/image.jpg" alt="Жак-Ив Кусто">
                 </div>
-                <div class="profile_info">
-                    <div class="info">
-                        <h1 class="title">Жак-Ив Кусто</h1>
-                        <p class="subtitle">Исследователь океана</p>
+                <div class="profile__info">
+                    <div class="profile__edit">
+                        <h1 class="profile__title">Жак-Ив Кусто</h1>
+                        <p class="profile__subtitle">Исследователь океана</p>
                     </div>
-                    <!--<div class="edit-button">
-                        <img src="/images/Edit Button.svg" alt="">
-										</div>-->
-										<button type="button" class="edit__button"></button>
-
+                    <button type="button" class="profile__edit-button"></button>
                 </div>
-                <!--<div class="add__button">
-                    <img src="" alt="">
-								</div>-->
-								<button type="button" class="add__button"></button>
+                <button type="button" class="profile__add-button"></button>
             </section>
             <section class="elements">
                 <ul class="element">
                     <li>
-                        <img class="element__image" src="/images/unsplash.jpg" alt="название">
+                        <img class="element__image" src="./images/unsplash.jpg" alt="название">
                     </li>
                     <li class="element__info">
                         <h2 class="element__title">Карачаевск dsfsfsdfdfsdfsdfsdfsdfsdfsdfsfd</h2>
-                        <img class="element__like" src="/images/Vector.svg" alt="Сердечко">
+                        <img class="element__like" src="./images/Vector.svg" alt="Сердечко">
                     </li>
                 </ul>
                 <ul class="element">
                     <li>
-                        <img class="element__image" src="/images/unsplash.jpg" alt="название">
+                        <img class="element__image" src="./images/unsplash.jpg" alt="название">
                     </li>
                     <li class="element__info">
                         <h2 class="element__title">Карачаевск</h2>
-                        <img class="element__like" src="/images/Vector.svg" alt="Сердечко">
+                        <img class="element__like" src="./images/Vector.svg" alt="Сердечко">
                     </li>
                 </ul>
                 <ul class="element">
                     <li>
-                        <img class="element__image" src="/images/unsplash.jpg" alt="название">
+                        <img class="element__image" src="./images/unsplash.jpg" alt="название">
                     </li>
                     <li class="element__info">
                         <h2 class="element__title">Карачаевск dsfsfsdfdfsdfsdfsdfsdfsdfsdfsfd</h2>
-                        <img class="element__like" src="/images/Vector.svg" alt="Сердечко">
+                        <img class="element__like" src="./images/Vector.svg" alt="Сердечко">
                     </li>
                 </ul>
                 <ul class="element">
                     <li>
-                        <img class="element__image" src="/images/unsplash.jpg" alt="название">
+                        <img class="element__image" src="./images/unsplash.jpg" alt="название">
                     </li>
                     <li class="element__info">
                         <h2 class="element__title">Карачаевск dsfsfsdfdfsdfsdfsdfsdfsdfsdfsfd</h2>
-                        <img class="element__like" src="/images/Vector.svg" alt="Сердечко">
+                        <img class="element__like" src="./images/Vector.svg" alt="Сердечко">
                     </li>
                 </ul>
                 <ul class="element">
                     <li>
-                        <img class="element__image" src="/images/unsplash.jpg" alt="название">
+                        <img class="element__image" src="./images/unsplash.jpg" alt="название">
                     </li>
                     <li class="element__info">
                         <h2 class="element__title">Карачаевск dsfsfsdfdfsdfsdfsdfsdfsdfsdfsfd</h2>
-                        <img class="element__like" src="/images/Vector.svg" alt="Сердечко">
+                        <img class="element__like" src="./images/Vector.svg" alt="Сердечко">
                     </li>
                 </ul>
                 <ul class="element">
                     <li>
-                        <img class="element__image" src="/images/unsplash.jpg" alt="название">
+                        <img class="element__image" src="./images/unsplash.jpg" alt="название">
                     </li>
                     <li class="element__info">
                         <h2 class="element__title">Карачаевск dsfsfsdfdfsdfsdfsdfsdfsdfsdfsfd</h2>
-                        <img class="element__like" src="/images/Vector.svg" alt="Сердечко">
+                        <img class="element__like" src="./images/Vector.svg" alt="Сердечко">
                     </li>
                 </ul>
             </section>
@@ -98,15 +90,16 @@
         <div class="popup">
             <div class="popup__content">
                 <button type="button" class="popup__close"></button>
-								<h3 class="popup__title">Редактировать профиль</h3>
-								<form class="popup__form">
-									<input type="text">
-									<input type="text" class="popup__input" class="popup__input_type_title">
-									<button type="submit">Сохранить</button>
-								</form>
+                <h3 class="popup__title">Редактировать профиль</h3>
+                <form class="popup__form">
+                    <input type="text" class="popup__input popup__input_type_name">
+                    <input type="text" class="popup__input popup__input_type_title">
+                    <button type="submit">Сохранить</button>
+                </form>
             </div>
         </div>
     </div>
+    <script src="script/index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,11 @@
+.element__like {
+  margin: auto 15px auto 21px;
+  height: 18px;
+  width: 21px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.element__like:hover {
+  opacity: 0.6;
+}
