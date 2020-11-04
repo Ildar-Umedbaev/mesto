@@ -4,13 +4,12 @@
   border: none;
   cursor: pointer;
   box-sizing: content-box;
-  background-color: white; 
+  background-color: white;
   padding: 0;
   height: 18px;
   width: 21px;
   background-size: cover;
   border-radius: 0px;
-  cursor: pointer;
 }
 
 .element__like:hover {
