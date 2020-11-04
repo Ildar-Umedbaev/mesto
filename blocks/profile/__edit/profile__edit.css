@@ -1,4 +1,13 @@
 .profile__edit {
   max-height: 100%;
   margin: 0;
+  display: flex;
+  
+}
+
+@media screen and (max-width: 767px) {
+  .profile__edit {
+    max-width: 100%;
+    margin-left: 46px;
+  }
 }

@@ -5,11 +5,22 @@
   padding: 0;
   height: 24px;
   width: 24px;
-  background-image: url(/images/Edit_Button.svg);
+  background-image: url(../../../images/Edit_Button.svg);
   border: none;
   cursor: pointer;
+  background-size: cover;
 }
 
 .profile__edit-button:hover {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 767px) {
+  .profile__edit-button {
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 19px;
+    height: 18px;
+    width: 18px;
+  }
 }

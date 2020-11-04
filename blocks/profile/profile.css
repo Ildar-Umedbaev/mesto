@@ -2,5 +2,22 @@
   position: relative;
   display: flex;
   align-items: center;
+  text-align: center;
   max-height: 120px;
+}
+
+
+
+@media screen and (max-width: 917px) {
+  .profile {
+    display: block;
+    
+    max-height: 740px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    max-height: 286px;
+  }
 }
