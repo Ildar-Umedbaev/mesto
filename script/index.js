@@ -8,7 +8,6 @@ let subTitle = document.querySelector('.profile__subtitle');
 let nameInput = document.querySelector('.popup__input_type_name'); // Воспользуйтесь инструментом .querySelector()
 let jobInput = document.querySelector('.popup__input_type_title'); // Воспользуйтесь инструментом .querySelector()
 
-
 function showPopup() {
     popup.classList.add('popup_opened');
     nameInput.value = title.textContent;
@@ -20,6 +19,7 @@ editButton.addEventListener('click', showPopup);
 function closePopup() {
     popup.classList.remove('popup_opened');
 }
+
 popupCloseButton.addEventListener('click',  closePopup);
 
 // Находим форму в DOM

@@ -15,9 +15,7 @@
         </header>
         <main class="content">
             <section class="profile">
-                <div class="profile__avatar">
-                    <img class="profile__photo" src="./images/image.jpg" alt="Жак-Ив Кусто">
-                </div>
+                <img class="profile__photo profile__avatar" src="./images/image.jpg" alt="Жак-Ив Кусто">
                 <div class="profile__info">
                     <div class="profile__edit">
                         <h1 class="profile__title">Жак-Ив Кусто</h1>
@@ -27,73 +25,63 @@
                 </div>
                 <button type="button" class="profile__add-button"></button>
             </section>
-            <section class="elements">
-                <ul class="element">
-                    <li>
+            <section>
+                <ul class="elements">
+                    <li class="element">
                         <img class="element__image" src="./images/Saint_Petersburg_Russia.jpg" alt="Санкт-Петербург">
+                        <div class="element__info">
+                            <h2 class="element__title">Санкт-Петербург</h2>
+                            <button type="button" class="element__like"></button>
+                        </div>
                     </li>
-                    <li class="element__info">
-                        <h2 class="element__title">Санкт-Петербург</h2>
-                        <img class="element__like" src="./images/Vector.svg" alt="Сердечко">
-                    </li>
-                </ul>
-                <ul class="element">
-                    <li>
+                    <li class="element">
                         <img class="element__image" src="./images/Moscow_Russia.jpg" alt="Москва">
+                        <div class="element__info">
+                            <h2 class="element__title">Москва</h2>
+                            <button type="button" class="element__like"></button>
+                        </div>
                     </li>
-                    <li class="element__info">
-                        <h2 class="element__title">Москва</h2>
-                        <img class="element__like" src="./images/Vector.svg" alt="Сердечко">
-                    </li>
-                </ul>
-                <ul class="element">
-                    <li>
+                    <li class="element">
                         <img class="element__image" src="./images/velikii_no.jpg" alt="Великий Новгород">
+                        <div class="element__info">
+                            <h2 class="element__title">Великий Новгород</h2>
+                            <button type="button" class="element__like"></button>
+                        </div>
                     </li>
-                    <li class="element__info">
-                        <h2 class="element__title">Великий Новгород</h2>
-                        <img class="element__like" src="./images/Vector.svg" alt="Сердечко">
-                    </li>
-                </ul>
-                <ul class="element">
-                    <li>
+                    <li class="element">
                         <img class="element__image" src="./images/kazan_kremlin.jpg" alt="Казань">
+                        <div class="element__info">
+                            <h2 class="element__title">Казань</h2>
+                            <button type="button" class="element__like"></button>
+                        </div>
                     </li>
-                    <li class="element__info">
-                        <h2 class="element__title">Казань</h2>
-                        <img class="element__like" src="./images/Vector.svg" alt="Сердечко">
-                    </li>
-                </ul>
-                <ul class="element">
-                    <li>
+                    <li class="element">
                         <img class="element__image" src="./images/Volgograd.jpg" alt="Волгоград">
+                        <div class="element__info">
+                            <h2 class="element__title">Волгоград</h2>
+                            <button type="button" class="element__like"></button>
+                        </div>
                     </li>
-                    <li class="element__info">
-                        <h2 class="element__title">Волгоград</h2>
-                        <img class="element__like" src="./images/Vector.svg" alt="Сердечко">
-                    </li>
-                </ul>
-                <ul class="element">
-                    <li>
+                    <li class="element">
                         <img class="element__image" src="./images/Zolotoy_Most_Vladivostok.jpg" alt="Владивосток">
-                    </li>
-                    <li class="element__info">
-                        <h2 class="element__title">Владивосток</h2>
-                        <img class="element__like" src="./images/Vector.svg" alt="Сердечко">
+                        <div class="element__info">
+                            <h2 class="element__title">Владивосток</h2>
+                            <button type="button" class="element__like"></button>
+                        </div>
                     </li>
                 </ul>
             </section>
         </main>
         <footer class="footer">
-            <p class="footer__copyright">© 2020 Mesto Russia</p>
+            <p class="footer__copyright">&COPY; 2020 Mesto Russia</p>
         </footer>
         <div class="popup">
             <div class="popup__content">
                 <button type="button" class="popup__close"></button>
                 <h3 class="popup__title">Редактировать профиль</h3>
-                <form class="popup__form">
-                    <input type="text" class="popup__input popup__input_type_name">
-                    <input type="text" class="popup__input popup__input_type_title">
+                <form class="popup__form" name="edit-profile">
+                    <input type="text" name="profile-name" class="popup__input popup__input_type_name">
+                    <input type="text" name="profile-title" class="popup__input popup__input_type_title">
                     <button type="submit" class="popup__submit">Сохранить</button>
                 </form>
             </div>
